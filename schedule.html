@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Sakit Ayem Tentrem</title>
+    <link rel="icon" href="asset/images/logo-rs-1.gif" type="image/jpg" sizes="16x16">
+    <link type="text/css" rel="stylesheet" href="asset/css/main.css">
+    <link type="text/css" rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="asset/jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="asset/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top">
+        <a class="navbar-brand" href="index.html"><img src="asset/images/logo rs.png" alt="" height="50" class="d-inline-block align-middle mr-2"></a>
+        <button class="navbar-toggler navbar-light ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#main-navigation">
+            <span class="navbar-toggler-icon" style="color: aqua;">
+               
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                </li>   
+                <li class="nav-item ">
+                    <a class="nav-link" href="about.html">Tentang Kami</a>
+                </li>  
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dokter
+                      </a>
+                      <div class="dropdown-menu active">
+                        <a class="dropdown-item" href="doctor_profile.html">Profil Dokter</a>
+                        <a class="dropdown-item active" href="schedule.html">Jadwal Praktik</a>
+                      </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Layanan
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="unggulan.html">Layanan Unggulan</a>
+                        <a class="dropdown-item" href="igd.html">Instalasi Gawat Darurat</a>
+                        <a class="dropdown-item" href="rawatinap.html">Rawat Inap</a>
+                        <a class="dropdown-item" href="rawatjalan.html">Rawat Jalan</a>
+                      </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Artikel
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="berita.html">Berita</a>
+                        <a class="dropdown-item" href="promo.html">Promo menarik</a>
+                        <a class="dropdown-item" href="testimonial.html">Testimoni</a>
+                        <a class="dropdown-item" href="galeri.html">Galeri</a>
+                      </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kontak
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="faq.html">FAQ</a>
+                        <a class="dropdown-item" href="detail_kontak.html">Detail Kontak</a>
+                      </div>
+                </li>
+            </ul>   
+        </div>
+    </nav>
+    <div class="header container-fluid header_about_us">
+        <div class="container bg-overlay">
+            <div class="text-center" >
+                <h1 class="text-left about_p" >Dokter Kami</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <h4 class="text-center" style="margin: 4rem 0rem 1rem 0rem; color: #d7385e;"> Pilih Spesialis</h4>
+        <div>
+            <select  class="custom-select col-lg-4 select_doctor">
+                <option value="anak" selected>Anak</option>
+                <option value="kandungan">Kandungan</option>
+                <option value="dalam">Penyakit Dalam</option>
+            </select>
+        </div>
+    </div>
+ 
+    <div class="anak box">
+        <div class="section-xl">
+            <div class="container">
+                <h1 class="text-center">Spesialis Anak</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 text-center">
+                                        <img src="asset/images/doctor/1.jpg" alt="" class="img-fluid rounded img-thumbnail img_doctor">
+                                        <p class="text-center">dr. Faizah Mala Rahayu, Sp.A</p>
+                                        <span class="badge badge-primary text-center">Spesialis Anak</span>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-text text-justify" >
+                                            <table class="table table-bordered table-hover table-striped tabel_jadwal" style="padding: 2rem;" >
+                                                <thead class="thead-dark">
+                                                    <tr >
+                                                        <th class="th-md" scope="col">Hari</th>
+                                                        <th class="th-lg" scope="col">Jam</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Senin</th>
+                                                        <td>12.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Selasa</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Rabu</th>
+                                                        <td>13.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kamis</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Jumat</th>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 text-center">
+                                        <img src="asset/images/doctor/2.jfif" alt="" class="img-fluid rounded img-thumbnail img_doctor">
+                                        <p class="text-center">dr. Raden Lazuardi, Sp.A, M.Kes</p>
+                                        <span class="badge badge-primary text-center">Spesialis Anak</span>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-text text-justify">
+                                            <table class="table table-bordered table-hover table-striped tabel_jadwal">
+                                                <thead class="thead-dark">
+                                                    <tr >
+                                                        <th class="th-md" scope="col">Hari</th>
+                                                        <th class="th-lg" scope="col">Jam</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Senin</th>
+                                                        <td>12.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Selasa</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Rabu</th>
+                                                        <td>13.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kamis</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Jumat</th>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 text-center">
+                                        <img src="asset/images/doctor/3.jpg" alt="" class="img-fluid rounded img-thumbnail img_doctor">
+                                        <p class="text-center">dr. Ade Padmi Yulianti, Sp.A</p>
+                                        <span class="badge badge-primary text-center">Spesialis Anak</span>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-text text-justify">
+                                            <table class="table table-bordered table-hover table-striped tabel_jadwal">
+                                                <thead class="thead-dark">
+                                                    <tr >
+                                                        <th class="th-md" scope="col">Hari</th>
+                                                        <th class="th-lg" scope="col">Jam</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Senin</th>
+                                                        <td>12.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Selasa</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Rabu</th>
+                                                        <td>13.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kamis</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Jumat</th>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 text-center">
+                                        <img src="asset/images/doctor/4.jpg" alt="" class="img-fluid rounded img-thumbnail img_doctor">
+                                        <p class="text-center">dr. Wirda Permata, Sp.A.M.Sc</p>
+                                        <span class="badge badge-primary text-center">Spesialis Anak</span>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-text text-justify">
+                                            <table class="table table-bordered table-hover table-striped tabel-jadwal">
+                                                <thead class="thead-dark">
+                                                    <tr >
+                                                        <th class="th-md" scope="col">Hari</th>
+                                                        <th class="th-lg" scope="col">Jam</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Senin</th>
+                                                        <td>12.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Selasa</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Rabu</th>
+                                                        <td>13.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kamis</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Jumat</th>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>    
+    </div>
+    <div class="kandungan box">
+        <div class="section-xl">
+            <div class="container">
+                <h1 class="text-center">Spesialis Kandungan</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 text-center">
+                                        <img src="asset/images/doctor/5.png" alt="" class="img-fluid rounded img-thumbnail img_doctor">
+                                        <p class="text-center">dr. Cakrawala Mitra Prasasta, Sp.Og, M.Kes</p>
+                                        <span class="badge badge-primary text-center">Spesialis Kandungan</span>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-text text-justify">
+                                            <table class="table table-bordered table-hover table-striped tabel_jadwal" style="padding: 2rem;" >
+                                                <thead class="thead-dark">
+                                                    <tr >
+                                                        <th class="th-md" scope="col">Hari</th>
+                                                        <th class="th-lg" scope="col">Jam</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Senin</th>
+                                                        <td>12.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Selasa</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Rabu</th>
+                                                        <td>13.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kamis</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Jumat</th>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 text-center">
+                                        <img src="asset/images/doctor/6.jpg" alt="" class="img-fluid rounded img-thumbnail img_doctor">
+                                        <p class="text-center">dr. Baktiono Purwanto Rajata, Sp.Og, M.Kes</p>
+                                        <span class="badge badge-primary text-center">Spesialis Anak</span>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-text text-justify"> 
+                                            <table class="table table-bordered table-hover table-striped tabel_jadwal" style="padding: 2rem;" >
+                                                <thead class="thead-dark">
+                                                    <tr >
+                                                        <th class="th-md" scope="col">Hari</th>
+                                                        <th class="th-lg" scope="col">Jam</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Senin</th>
+                                                        <td>12.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Selasa</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Rabu</th>
+                                                        <td>13.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kamis</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Jumat</th>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+    <div class="dalam box">
+        <div class="section-xl">
+            <div class="container">
+                <h1 class="text-center">Spesialis Penyakit Dalam</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 text-center">
+                                        <img src="asset/images/doctor/7.png" alt="" class="img-fluid rounded img-thumbnail img_doctor">
+                                        <p class="text-center">dr. Uchita Palastri , MSc,. Sp.PD</p>
+                                        <span class="badge badge-primary">Spesialis Penyakit Dalam</span>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-text text-justify">
+                                            <table class="table table-bordered table-hover table-striped tabel_jadwal" style="padding: 2rem;" >
+                                                <thead class="thead-dark">
+                                                    <tr >
+                                                        <th class="th-md" scope="col">Hari</th>
+                                                        <th class="th-lg" scope="col">Jam</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Senin</th>
+                                                        <td>12.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Selasa</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Rabu</th>
+                                                        <td>13.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kamis</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Jumat</th>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 text-center">
+                                        <img src="asset/images/doctor/8.png" alt="" class="img-fluid rounded img-thumbnail img_doctor">
+                                        <p class="text-center">dr.Hartaka, Sp.PD, M.Kes</p>
+                                        <span class="badge badge-primary text-center">Spesialis Penyakit Dalam  </span>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-text text-justify">
+                                            <table class="table table-bordered table-hover table-striped tabel_jadwal" style="padding: 2rem;" >
+                                                <thead class="thead-dark">
+                                                    <tr >
+                                                        <th class="th-md" scope="col">Hari</th>
+                                                        <th class="th-lg" scope="col">Jam</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Senin</th>
+                                                        <td>12.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Selasa</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Rabu</th>
+                                                        <td>13.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kamis</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Jumat</th>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4 text-center">
+                                        <img src="asset/images/doctor/9.jpg" alt="" class="img-fluid rounded img-thumbnail img_doctor">
+                                        <p class="text-center">dr.Agnes Yuniar, Sp.PD, M.Kes</p>
+                                        <span class="badge badge-primary text-center">Spesialis Penyakit Dalam</span>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-text text-justify">
+                                            <table class="table table-bordered table-hover table-striped tabel_jadwal" style="padding: 2rem;" >
+                                                <thead class="thead-dark">
+                                                    <tr >
+                                                        <th class="th-md" scope="col">Hari</th>
+                                                        <th class="th-lg" scope="col">Jam</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Senin</th>
+                                                        <td>12.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Selasa</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Rabu</th>
+                                                        <td>13.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kamis</th>
+                                                        <td>14.00 - selesai</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Jumat</th>
+                                                        <td>-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="footer-top footer-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-8 col-sm-12 col-footer">
+                         <img src="asset/images/logo rs.png" class="img-fluid" alt="">                         
+                         <p style="margin-top: 20px; margin-bottom: 40px;">"Kami tidak pernah meragaukan pasien meskipun permintaan yang aneh-aneh"</p>
+                         <div class="flex-center">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-youtube"></a>
+                         </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-12">
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-footer">
+                        <h3>HUBUNGI KAMI</h3>
+                        <p><i class="fa fa-ambulance" style="padding: 0; margin-bottom: 0;"></i>Ambulan : 000-999-8888</p>
+                        <p><i class="fa fa-phone" style="padding: 0;margin-bottom: 0;"></i> Pusat Panggilan (0273) 446 3535</p>
+                        <p><i class="fa fa-whatsapp" style="padding: 0;margin-bottom: 0;"></i>Whatsapp : 087-444-999-000</p>
+                        <p><i class="fa fa-envelope-o" style="padding: 0;margin-bottom: 0;"></i> Email : info@rs-ayemtentrem.co.id</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-footer">
+                        <h3>LOKASI</h3>
+                        <h5>Rumah Sakit Ayem Tentrem</h5>
+                        <p>
+                            Jl. Dr. Rajiman No.219, Jayengan, Kec. Serengan, Kota Surakarta, Jawa Tengah 57152
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="footer-copyright text-center">© 2020 Copyright: rs-ayemtentrem.com</div>
+        <div class="sosmed">
+            <div class="isi-sosmed">
+                <a href="tel:1-500-805" ><i class="fa fa-ambulance"></i></a>
+                <a href="tel:082245678908" ><i class="fa fa-phone"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=6281329757220&text=Ada kondisi darurat lokasi akan saya shareloc sekarang" ><i class="fa fa-whatsapp"></i></a>
+                <a href="mail:info@rs-ayemtentrem.co.id" ><i class="fa fa-envelope-o"></i></a>
+                
+            </div>
+        </div>
+    </footer>
+    <script src = "asset/js/main.js"> </script>
+</body>
+</html>
